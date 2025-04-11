@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AB Cloaking</title>
+    <link rel="stylesheet" href="button.css">
+    <script>
+        function cloak(url, title, features) {
+            const w = window.open('about:blank', '', features)
+            w.document.body.innerHTML = `
+<title>${title}</title>
+
+<iframe src="${url}" height=100% width=100% style="border: 0px;"></iframe>
+
+
+
+`
+        }
+    </script>
+    <style>
+        body {
+            background-color: lightgreen;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="max-width: fit-content; margin: 0 auto; margin-top: 15%; text-align: center;">
+        <h1 style="color: rgb(62, 62, 62)">AB Cloaking</h1>
+        <div onclick="start()">
+            <button class="button-17" role="button">Start</button>
+            <script>
+                function start() {
+                    cloak(prompt(`Enter URL
+Remember to prefix with "https://" if website.`, 'https://example.com'), 
+prompt("Enter tab title", "AB Cloaked Tab"),
+prompt(`Warning: Advanced! if you don't know what you are doing, just press "ok"
+
+Enter Window Features`)
+)
+                }
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>

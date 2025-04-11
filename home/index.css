@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(193, 244, 255);
+}
+
+#header {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: linear-gradient(30deg, #00c180 12%, transparent 12.5%, transparent 87%, #00c180 87.5%, #00c180), linear-gradient(150deg, #00c180 12%, transparent 12.5%, transparent 87%, #00c180 87.5%, #00c180), linear-gradient(30deg, #00c180 12%, transparent 12.5%, transparent 87%, #00c180 87.5%, #00c180), linear-gradient(150deg, #00c180 12%, transparent 12.5%, transparent 87%, #00c180 87.5%, #00c180), linear-gradient(60deg, #00c18077 25%, transparent 25.5%, transparent 75%, #00c18077 75%, #00c18077), linear-gradient(60deg, #00c18077 25%, transparent 25.5%, transparent 75%, #00c18077 75%, #00c18077);
+    background-size: 20px 35px;
+    background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
+}
+
+#container1{
+    background-color: rgba(255, 255, 255, 0.75);
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.75px;
+    padding-bottom: 0.75px;
+    padding-inline: 12.5px;
+    border-radius: 17.5px;
+}
+
+.betterlink{
+    color: blue;
+}
+.betterlink:hover{
+    
+    text-decoration: underline;
+}
+.betterlink:not(:hover){
+    text-decoration: none;
+}
+
+.em1{
+    height: 1em;
+}
